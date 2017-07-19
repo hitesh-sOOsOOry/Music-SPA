@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="jquery-3.2.1.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/model.js"></script>
+</head>
+<body>
+<!--   <i class="fa fa-level-up" aria-hidden="true"></i>-->
+    <div id="container">
+        <header id="header" class="clearfix">
+            <div class="container-fluid">
+                <div class="logo left">
+                    <a href=""><img src="assets/images/brand.png" alt=""></a>
+                </div>
+                <div class="search-box left">
+                    <i class="fa fa-search fa-" aria-hidden="true"></i>
+                    <input type="text" title="Search here..." autocomplete="off" placeholder="What are you looking for?">
+                </div>
+                <div class="access right">
+                    <span class="col-md-4 col-xs-6"><i id="theme" class="fa fa-circle" aria-hidden="true"></i></span>
+                    <span id="fa" class="col-sm-6 col-xs-6"><i id="fa-th" class="fa fa-th" aria-hidden="true"></i></span>
+                    <div id="access-2">
+                    	<span class="col-md-4"><i id="heart" class="fa fa-heart" aria-hidden="true"></i></span>
+                    	<span class="col-md-4"><i id="user-circle" class="fa fa-user-circle" aria-hidden="true"></i></span>
+					</div>
+                </div>
+                <div class="guest-log">
+                    <div class="login">
+                        <a href="" class="cross">X</a>
+                        <div class="leftCont left">
+                            <h2><span>One Account</span> Unlimited Benefits</h2>
+                        </div>
+                        <div class="rightCont right">
+                            <div class="signInCont">
+                                <h3>Log In</h3>
+                                <hr>
+                                <div class="logWays">
+                                    <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </div>
+                                <hr>
+                                <h4>funMaza</h4>
+                            </div>
+                            <div class="login-form">
+                                <input type="email" name="Email" placeholder="Email">
+                                <input type="password" name="Password" placeholder="Password">
+                                <a href="" class="log-in">Log in</a>
+                                <span class="forg-pass">Forgot password?</span>
+                                <span class="new-user">New User?<a href="">Register</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="container-fluid">
+            <aside>
+            <div id="sm-sidebar" class="left">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div id="sidebar" class="left">
+                <ul>
+                    <li id="main-menu">
+                        <div class="section">
+                            <span href="">Main Menu</span>
+                        </div>
+                        <ul>
+                            <li><a href="">asdasdasd</a></li><li><a href="">asdasdasd</a></li><li><a href="">asdasdasd</a></li><li><a href="">asdasdasd</a></li>
+                        </ul>
+                    </li>
+                    <li id="audio-sec">
+                        <div class="section">
+                            <span href="">Audio Section</span>
+                        </div>
+                        <ul>
+                            <li><a href="">asdasdasd</a></li>
+                        </ul>
+                    </li>
+                    <li id="video-sec">
+                        <div class="section">
+                            <span href="">Video Section</span>
+                        </div>
+                        <ul>
+                            <li><a href="">asdasdasd</a></li>
+                        </ul>
+                    </li>
+                    <li id="chart-sec">
+                        <div class="section">
+                            <span href="">Chart Section</span>
+                        </div>
+                        <ul>
+                            <li><a href="">asdasdasd</a></li>
+                        </ul>
+                    </li>
+                </ul>
+			</div>
+			</aside>
+            <main class="right">
+                <nav>
+                    <div id="home" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <a href="">Home</a>
+                    </div>
+                    <div id="bolywd" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <a href="">Bollywood MP3</a>
+                    </div>
+                    <div id="charts" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <a href="">Charts</a>
+                    </div>
+                    <div id="bolywd-vid" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <a href="">Bollywood Videos</a>
+                    </div>
+                    <div id="eng-vid" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <a href="">English Videos</a>
+                    </div>
+                    <div id="punjabi" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <a href="">Punjabi Songs</a>
+                    </div>
+                </nav>
+                <div class="dsgn-1 top-album col-md-12">
+                    <div class="title">
+                        <h3>Top Albums</h3>
+                        <a href="">View All</a>
+                    </div>
+                    <div class="container-fluid">
+                        <span class="arr l-arr"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                        <span class="arr r-arr"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                        <ul class="ul">
+                        <li class="song" id="">
+                            <div class="img">
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                                <i class="fa fa-play-circle-o" aria-hidden="true" title="Click to add to Playlist"></i>
+                            </div>
+                            <div class="about">
+                                <a href="">Raabta</a>
+                                <span class="">2017 | Hindi</span>
+                                <div class="lines">
+                                    <div class="dots">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="song">
+                            <div class="img">
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="about">
+                                <a href="">Raabta</a>
+                                <span class="">2017 | Hindi</span>
+                                <div class="lines">
+                                    <div class="dots">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="extra">
+                                        <ul>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="song">
+                            <div class="img">
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="about">
+                                <a href="">Raabta</a>
+                                <span class="">2017 | Hindi</span>
+                                <div class="lines">
+                                    <div class="dots">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="extra">
+                                        <ul>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="song">
+                            <div class="img">
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="about">
+                                <a href="">Raabta</a>
+                                <span class="">2017 | Hindi</span>
+                                <div class="lines">
+                                    <div class="dots">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="extra">
+                                        <ul>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="song">
+                            <div class="img">
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="about">
+                                <a href="">Raabta</a>
+                                <span class="">2017 | Hindi</span>
+                                <div class="lines">
+                                    <div class="dots">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="extra">
+                                        <ul>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="extra">
+                                        <ul>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dsgn-1 bolywd-vids col-md-12">
+                    <div class="title">
+                        <h3>Bollywood HD Videos</h3>
+                        <a href="">View All</a>
+                    </div>
+                    <div class="container-fluid">
+                        <span class="arr l-arr"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                        <span class="arr r-arr"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                        <ul class="ul">
+                        <li class="song">
+                            <div class="img">
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="about">
+                                <a href="">Raabta</a>
+                                <span class="">2017 | Hindi</span>
+                                <div class="lines">
+                                    <div class="dots">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="extra">
+                                        <ul>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="song">
+                            <div class="img">
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="about">
+                                <a href="">Raabta</a>
+                                <span class="">2017 | Hindi</span>
+                                <div class="lines">
+                                    <div class="dots">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="extra">
+                                        <ul>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="song">
+                            <div class="img">
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="about">
+                                <a href="">Raabta</a>
+                                <span class="">2017 | Hindi</span>
+                                <div class="lines">
+                                    <div class="dots">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="extra">
+                                        <ul>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="song">
+                            <div class="img">
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="about">
+                                <a href="">Raabta</a>
+                                <span class="">2017 | Hindi</span>
+                                <div class="lines">
+                                    <div class="dots">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="extra">
+                                        <ul>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="song">
+                            <div class="img">
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="about">
+                                <a href="">Raabta</a>
+                                <span class="">2017 | Hindi</span>
+                                <div class="lines">
+                                    <div class="dots">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="extra">
+                                        <ul>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dsgn-1 pnb-song col-md-12">
+                    <div class="title">
+                        <h3>Punjabi Songs</h3>
+                        <a href="">View All</a>
+                    </div>
+                    <div class="container-fluid">
+                        <span class="arr l-arr"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                        <span class="arr r-arr"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                        <ul class="ul">
+                        <li class="song">
+                            <div class="img">
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="about">
+                                <a href="">Raabta</a>
+                                <span class="">2017 | Hindi</span>
+                                <div class="lines">
+                                    <div class="dots">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="extra">
+                                        <ul>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="song">
+                            <div class="img">
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="about">
+                                <a href="">Raabta</a>
+                                <span class="">2017 | Hindi</span>
+                                <div class="lines">
+                                    <div class="dots">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="extra">
+                                        <ul>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="song">
+                            <div class="img">
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="about">
+                                <a href="">Raabta</a>
+                                <span class="">2017 | Hindi</span>
+                                <div class="lines">
+                                    <div class="dots">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="extra">
+                                        <ul>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="song">
+                            <div class="img">
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="about">
+                                <a href="">Raabta</a>
+                                <span class="">2017 | Hindi</span>
+                                <div class="lines">
+                                    <div class="dots">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="extra">
+                                        <ul>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="song">
+                            <div class="img">
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="about">
+                                <a href="">Raabta</a>
+                                <span class="">2017 | Hindi</span>
+                                <div class="lines">
+                                    <div class="dots">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="extra">
+                                        <ul>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                            <li>
+                                                <a href=""><i></i>Favourite</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>     
+                        </ul>
+                    </div>
+                </div>
+                <div class="dsgn-2 top10-wk col-md-12">
+                    <h3>Top 10 Weekly</h3>
+                    <div class="container-fluid">
+                        <ul id="ul" class="row">
+                            <li class="li1 col-lg-6 col-md-6 col-sm-6">
+                                <span class="play">Play Button</span>
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="Song Name">
+                                <a href="" class="lnk1">Raabta(Title Track)</a>
+                                <span> - </span>
+                                <a href="" class="lnk2">Raabta</a>
+                                <div class="dots">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+<!--
+                                <div class="extra">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+-->
+                            </li>
+                            <li class="li2 col-lg-6 col-md-6 col-sm-6">
+                                <span class="play">Play Button</span>
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="Song Name">
+                                <a href="" class="lnk1">Raabta(Title Track)</a>
+                                <span> - </span>
+                                <a href="" class="lnk2">Raabta</a>
+                                <div class="dots">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+<!--
+                                <div class="extra">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+-->
+                            </li>
+                            <li class="li1 col-lg-6 col-md-6 col-sm-6">
+                                <span class="play">Play Button</span>
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="Song Name">
+                                <a href="" class="lnk1">Raabta(Title Track)</a>
+                                <span> - </span>
+                                <a href="" class="lnk2">Raabta</a>
+                                <div class="dots">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+<!--
+                                <div class="extra">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+-->
+                            </li>
+                            <li class="li2 col-lg-6 col-md-6 col-sm-6">
+                                <span class="play">Play Button</span>
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="Song Name">
+                                <a href="" class="lnk1">Raabta(Title Track)</a>
+                                <span> - </span>
+                                <a href="" class="lnk2">Raabta</a>
+                                <div class="dots">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+<!--
+                                <div class="extra">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+-->
+                            </li>
+                            <li class="li1 col-lg-6 col-md-6 col-sm-6">
+                                <span class="play">Play Button</span>
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="Song Name">
+                                <a href="" class="lnk1">Raabta(Title Track)</a>
+                                <span> - </span>
+                                <a href="" class="lnk2">Raabta</a>
+                                <div class="dots">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+<!--
+                                <div class="extra">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+-->
+                            </li>
+                            <li class="li2 col-lg-6 col-md-6 col-sm-6">
+                                <span class="play">Play Button</span>
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="Song Name">
+                                <a href="" class="lnk1">Raabta(Title Track)</a>
+                                <span> - </span>
+                                <a href="" class="lnk2">Raabta</a>
+                                <div class="dots">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+<!--
+                                <div class="extra">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+-->
+                            </li>
+                            <li class="li1 col-lg-6 col-md-6 col-sm-6">
+                                <span class="play">Play Button</span>
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="Song Name">
+                                <a href="" class="lnk1">Raabta(Title Track)</a>
+                                <span> - </span>
+                                <a href="" class="lnk2">Raabta</a>
+                                <div class="dots">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+<!--
+                                <div class="extra">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+-->
+                            </li>
+                            <li class="li2 col-lg-6 col-md-6 col-sm-6">
+                                <span class="play">Play Button</span>
+                                <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="Song Name">
+                                <div class="name">
+                                <a href="" class="lnk1">Raabta(Title Track)</a>
+                                <span> - </span>
+                                <a href="" class="lnk2">Raabta</a>
+                                </div>
+                                <div class="dots">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+<!--
+                                <div class="extra">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+<!--
+            <aside class="sm-playlist left">
+            	Your Playlist
+            </aside>
+-->
+            <aside class="playlist left">
+                <h3 id="playlist-h3">Your Playlist</h3>
+                <ul id="playlist" class="hidden">
+                    <li>
+                        <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                        <a href=""  class="song-name">Raabta</a>
+                        <a href="" class="">2017 | Hindi</a>
+                        <span class="delete">||</span>
+                    </li>
+                    <li>
+                        <img src="http://content.hungama.com/audio%20album/display%20image/180x180%20jpeg/1976176954.jpg" alt="logo">
+                        <a href=""  class="song-name">Raabta</a>
+                        <a href="" class="">2017 | Hindi</a>
+                        <span class="delete">||</span>
+                    </li>
+                </ul>
+			</aside>
+        </section>	
+        <audio controls id="audio">
+        	<source src="assets/audio/BACKGROUND%20MUSIC%20OF%20NEW%20AXE%20SIGNATURE%20GOLD.mp3" type="audio/mp3">
+        </audio>
+    </div>
+</body>
+</html>

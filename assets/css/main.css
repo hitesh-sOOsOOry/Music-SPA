@@ -1,0 +1,978 @@
+#container {
+    background-color: #141009;
+}
+
+#container.theme {
+	background-color: aliceblue;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    z-index: 90;
+    width: 100%;
+    background-color: #141009;
+}
+
+#header.theme {
+	background-color: darkkhaki;
+}
+
+.logo {
+    background-image: -webkit-linear-gradient(left bottom, #8b60a6 0%, #ed6c7f 100%);
+    padding: 15px;
+    width: 20%;
+    height: 53px;
+}
+
+.search-box {
+    width: 60%;
+    padding: 8px;
+}
+
+.search-box i {
+    font-size: 20px;
+    width: 8%;
+    background-color: white;
+    text-align: center;
+    padding: 9px 0px;
+    border-radius: 10px 0px 0px 10px;
+    cursor: pointer;
+    border-right: 1px solid black;
+}
+
+.search-box input {
+    font-size: 20px;
+    font-family: serif;
+    border-width: 0;
+    padding: 5px 10px;
+    width: 92%;
+    margin-left: -4px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.search-box input:focus {
+    opacity: 1;
+    box-shadow: 0px 0px 30px lightblue;
+}
+
+.access {
+    width: 20%;
+}
+
+.access span {
+    padding: 0px;
+    text-align: center;
+}
+
+.access .fa {
+    text-shadow: 0px 0px 10px aqua;
+    cursor: pointer;
+}
+
+.access .fa-circle, .access .fa-heart {
+    font-size: 40px;
+    margin-top: 7px;
+}
+
+.access .fa-circle {
+	color: white;
+}
+
+.access .fa-heart {
+    color: red;
+}
+
+.access .fa-user-circle {
+    margin-top: 5px;
+    font-size: 45px;
+    color: white;
+}
+
+.access .fa-th {
+	position: relative;
+	font-size: 35px;
+	margin-top: 12px;
+	color: white;
+}
+
+.access #fa {
+	display: none;
+}
+
+.guest-log {
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+    position: fixed;
+    display: none;
+}
+
+.login {
+    background-color: white;
+    position: relative;
+    position: fixed;
+    right: 300px;
+    top: 100px;
+    padding: 20px;
+    box-shadow: 0px 0px 1000px aquamarine;
+    width: 40%;
+    z-index: 100;
+}
+
+.login .cross {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 10px;
+    background-color: lightgray;
+    box-shadow: -2px 2px 10px darkgray;
+    opacity: 0.5;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.login h2 {
+    width: 50%;
+}
+
+.login .leftCont {
+    width: 40%;
+}
+
+.login .rightCont {
+    width: 60%;
+    padding: 20px;
+    border-left: 1px solid lightblue;
+}
+
+.login .login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login .login-form input{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-width: 1px;
+    opacity: 0.5;
+    border-color: darkslategray;
+    width: 100%;
+}
+
+.login .login-form .log-in {
+    background-color: #1976D2;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.login .login-form span {
+    font-size: 14px;
+    color: lightslategray;
+}
+
+.login .login-form .forg-pass {
+    text-align: right;    
+}
+
+.login .login-form .new-user {
+    text-align: center;
+}
+
+.login .login-form .new-user a{
+    text-transform: uppercase;
+    padding: 2px;
+}
+
+section {
+    padding-top: 55px;
+	padding-bottom: 40px;
+}
+
+#sidebar {
+    width: 20%;
+    z-index: 30;
+}
+
+#sidebar ul {
+    padding: 0px;
+    list-style: none;
+}
+
+#sidebar div {
+    position: relative;
+    padding: 15px 40px;;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+}
+
+#sidebar div:after {
+    position: absolute;
+    content: '\f103';
+    right: 15px;
+    top: 10px;
+}
+
+#sidebar div:hover {
+    opacity: 0;
+}
+
+#sidebar div:hover:after {
+    content: '\f077';
+}
+
+#sidebar div span {
+    color: white;
+}
+
+#sidebar div span:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#sidebar ul ul {
+	display: none;
+	padding-left: 20px;
+}
+
+#sidebar ul ul.show{
+	display: block;
+}
+
+#sidebar ul ul li {
+	padding-left: 20px;
+	padding-top: 5px;
+	border-top: 1px solid white;
+}
+
+#sidebar ul ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+#sidebar #main-menu {
+    background-color: #1F1F1F;
+}
+
+#sidebar #audio-sec {
+    background-color: #664F8A;
+}
+
+#sidebar #video-sec {
+    background-color: #F0655F;
+}
+
+#sidebar #chart-sec {
+    background-color: #2CA9E1;
+}
+
+#sm-sidebar {
+    width: 8%;
+    display: none;
+	position: relative;
+}
+
+#sm-sidebar ul {
+    list-style: none;
+    background-color: black;
+    padding: 11px 4px;
+	cursor: pointer;
+}
+
+#sm-sidebar li {
+    height: 3px;
+    width: 80%;
+    background-color: white;
+    margin: 5px;
+}
+
+main {
+    width: 80%;
+}
+
+main nav {
+    display: flex;
+    margin-right: -15px;
+}
+
+main nav div{
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 1px 1px 10px aqua;
+	transition: 1s;
+	border-radius: 0px 0px 5px 5px;
+}
+
+main nav div a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+main nav div:hover{
+    margin-top: 1px;
+}
+
+main nav a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+main #home {
+    border-top: 5px solid #E1493E;
+    border-bottom: 2px solid #E1493E;
+}
+
+main #bolywd {
+    border-bottom: 2px solid #8ABA56;
+    border-top: 5px solid #8ABA56;
+}
+
+main #charts {
+    border-top: 5px solid #046DD5;
+    border-bottom: 2px solid #046DD5;
+}
+
+main #bolywd-vid {
+    border-top: 5px solid #FF8932;
+    border-bottom: 2px solid #FF8932;
+}
+
+main #eng-vid {
+    border-top: 5px solid #5B4282;
+    border-bottom: 2px solid #5B4282;
+}
+
+main #punjabi {
+    border-top: 5px solid #E84C8B;
+    border-bottom: 2px solid #E84C8B;
+}
+
+main #home:hover {
+    background-color: #E1493E;
+}
+
+main #bolywd:hover {
+    background-color: #8ABA56;
+}
+
+main #charts:hover {
+    background-color: #046DD5;
+}
+
+main #bolywd-vid:hover {
+    background-color: #FF8932;
+}
+
+main #eng-vid:hover {
+    background-color: #5B4282;
+}
+
+main #punjabi:hover {
+    background-color: #E84C8B;
+}
+
+.dsgn-1 {
+	z-index: 10;
+}
+
+.dsgn-1 .title {
+    position: relative;
+    border-radius: 10px;
+    margin: 50px -10px 20px;
+}
+
+.dsgn-1 .title h3 {
+    color: white;
+    padding: 5px 20px;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+
+.dsgn-1 .title a {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    color: white;
+}
+
+.dsgn-1 .container-fluid {
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.dsgn-1 .container-fluid.theme {
+	background-color: floralwhite;
+}
+
+.dsgn-1 .arr {
+    position: absolute;
+    padding: 60px 25px;
+    top: 90px;
+    z-index: 10;
+    opacity: .4;
+}
+
+.dsgn-1 .arr:hover {
+    cursor: pointer;
+}
+
+.dsgn-1 .l-arr {
+    left: 0px;
+}
+
+.dsgn-1 .r-arr {
+    right: 0px;
+}
+
+.dsgn-1 .ul {
+    padding: 0px;
+    width: 300%;
+    overflow: hidden;
+}
+
+.dsgn-1 .song {
+    position: relative;
+    width: 200px;
+    margin: 10px 25px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    float: left;
+    overflow: hidden;
+}
+
+.dsgn-1 .img {
+    position: relative;
+    cursor: pointer;
+}
+
+.dsgn-1 .img:hover i{
+    display: block;
+}
+
+.dsgn-1 .img:hover img {
+    opacity: 0.5;
+}
+
+.dsgn-1 .img i {
+    display: none;
+    position: absolute;
+    font-size: 100px;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.7;
+    bottom: 40px;
+    left: 60px;
+}
+
+.dsgn-1 .about {
+    padding: 10px 5px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.dsgn-1 .about a {
+    font-family: serif;
+    font-size: 18px;
+    padding: 0px 10px;
+    display: block;
+    width: 80%;
+}
+
+.dsgn-1 .about span {
+    padding: 0px 10px;
+}
+
+.dsgn-1 .dots ul {
+    position: absolute;
+    margin: 0px;
+    padding: 3px;
+    list-style: none;
+    bottom: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.dsgn-1 .dots li {
+    position: relative;
+    height: 5px;
+    width: 5px;
+    margin: 2px;
+    border-radius: 50%;
+}
+
+.dsgn-1 .extra ul {
+    position: absolute;
+    z-index: 20;
+    list-style: none;
+    right: -50px;
+}
+
+.top-album .title {
+    background-color: #D6736F;
+}
+
+.top-album .container-fluid {
+    box-shadow: 0px 5px 30px #D6736F;
+}
+
+.top-album .arr {
+    background-color: #D6736F;
+}
+
+.top-album .about a {
+    color: #D6736F;
+}
+
+.top-album .about span {
+    color: #D6736F;
+}
+
+.top-album .dots li{
+    background-color: #D6736F;
+}
+
+.bolywd-vids .title {
+    background-color: #664F8A;
+}
+
+.bolywd-vids .container-fluid {
+    box-shadow: 0px 5px 30px #664F8A;
+}
+
+.bolywd-vids .arr {
+    background-color: #664F8A;
+}
+
+.bolywd-vids .about a {
+    color: #664F8A;
+}
+
+.bolywd-vids .about span {
+    color: #664F8A;
+}
+
+.bolywd-vids .dots li{
+    background-color: #664F8A;
+}
+
+.pnb-song .title {
+    background-color: #2CA9E1;
+}
+
+.pnb-song .container-fluid {
+    box-shadow: 0px 5px 30px #2CA9E1;
+}
+
+.pnb-song .arr {
+    background-color: #2CA9E1;
+}
+
+.pnb-song .about a {
+    color: #2CA9E1;
+}
+
+.pnb-song .about span {
+    color: #2CA9E1;
+}
+
+.pnb-song .dots li{
+    background-color: #2CA9E1;
+}
+
+.dsgn-2 {
+    border-radius: 10px;
+    margin-top: 50px;
+	z-index: 10;
+}
+
+.dsgn-2 h3 {
+    background-color: aquamarine;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.dsgn-2 #ul {
+    list-style: none;
+	padding: 0;
+	margin-left: 40px;
+}
+
+.dsgn-2 .li1, .dsgn-2 .li2 {
+    position: relative;
+    background-color: black;
+    border-bottom: 1px solid aquamarine;
+    margin-bottom: 2px;
+    display: inline-block;
+}
+
+.dsgn-2 li.theme {
+	background-color: tan;
+}
+
+.dsgn-2 .li1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 5px dashed;
+}
+
+.dsgn-2 .li2 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 5px double;
+}
+
+.dsgn-2 .play {
+    border-right: 1px solid white;
+    padding: 20px 10px 20px 0px;
+    cursor: pointer;
+}
+
+.dsgn-2 .row img {
+    width: 13%;
+    margin: 10px 30px 10px 10px;
+    box-shadow: 0px 0px 10px aquamarine;
+}
+
+.dsgn-2 .name {
+    width: 50%;
+    display: inline-block;
+    min-width: 100px;
+}
+
+.dsgn-2 a {
+    color: aquamarine;
+    padding: 10px 0px;
+}
+
+.dsgn-2 a:hover {
+    color: aquamarine;
+}
+
+.dsgn-2 span {
+    color: aquamarine;
+}
+
+.dsgn-2 .dots {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+.dsgn-2 .dots ul{
+    position: absolute;
+    padding: 3px;
+    list-style: none;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.dsgn-2 .dots li {
+    position: relative;
+    height: 5px;
+    width: 5px;
+    margin: 3px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+
+.playlist {
+	position: absolute;
+	top: 260px;
+	left: 15px;
+	z-index: 0;
+}
+
+.playlist-prop {
+	z-index: 20;
+}
+
+.playlist h3 {
+    color: blueviolet;
+    text-transform: uppercase;
+    font-family: monospace;
+    text-align: center;
+    border: 5px double blueviolet;
+    text-shadow: 0px 5px 5px blueviolet;
+	cursor: pointer;
+	opacity: 0.6;
+	padding: 10px 20px;
+	margin: 0;
+	z-index: 0;
+}
+
+.playlist h3.h3-prop {
+	opacity: 1;
+}
+
+.playlist ul {
+    list-style: decimal;
+    margin: 0px;
+    padding-left: 50px;
+    color: darkseagreen;
+    border: 5px double blueviolet;
+	height: 1000px;
+}
+
+.playlist li {
+    position: relative;
+    padding: 10px 0px;
+}
+
+.playlist li a {
+    color: blueviolet;
+    padding-left: 10px;
+    display: block;
+    text-shadow: 0px 0px 100px blueviolet;
+    margin-right: 40px;
+	font-size: 15px;
+}
+
+.playlist li a:hover {
+    text-decoration: none;
+}
+
+.playlist .song-name {
+    border-bottom: 1px solid darkslateblue;    
+}
+
+.playlist span {
+    position: absolute;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.playlist img {
+	width: 50px;
+}
+
+.playlist hr {
+    border: 1px solid white;
+    margin: 0px;
+}
+
+.playlist .delete {
+    right: 5px;
+    top: 10px;
+}
+
+.playlist.disable {
+	display: none;
+}
+
+audio {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	z-index: 100;
+}
+
+@media (max-width: 992px)
+{
+	#access-2.disable {
+		display: none;
+	}
+	
+	.access #fa {
+		display: block;
+	}
+	
+    .access .fa-heart, .access .fa-user-circle {
+		position: absolute;
+		right: 0px;
+		background-color: #141009;
+		width: 80px;
+		padding: 5px;
+		border-right: 1px solid white;
+		border-left: 1px solid white;
+	}
+	
+	.access .fa-heart {
+		top: 47px;
+	}
+	
+	.access .fa-user-circle {
+		top: 99px;
+	}
+	
+	#sidebar div {
+        padding-left: 10px;
+    }
+    
+    main nav div{
+        padding: 2px 15px;
+    }
+	
+	main nav div a {
+		font-size: 11px;
+	}
+    
+    .dsgn-1 .title {
+        margin: 50px -8px 15px;
+    }
+    
+    .dsgn-1 .title h3 {
+        font-size: 22px;
+    }
+    
+    .dsgn-1 .arr {
+        padding: 40px 22px;
+        top: 80px;
+    }
+    
+    .dsgn-1 .song {
+        width: 150px;
+        margin: 10px 20px;
+    }
+    
+    .dsgn-1 .img i {
+        font-size: 80px;
+        bottom: 35px;
+        left: 45px;
+    }
+	
+	.playlist h3 {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 768px)
+{
+	.access:last-child {
+        padding: 0px;
+    }
+	
+	.access .fa-heart, .access .fa-user-circle {
+		width: 60px;
+	}
+    
+    #sm-sidebar {
+        display: block;
+    }
+    
+    #sidebar {
+        display: none;
+        position: absolute;
+		width: 150px;
+		z-index: 30;
+    }
+	
+	#sidebar div {
+	    padding: 10px 20px;;
+    	font-size: 12px;
+	}
+    
+    main {
+        width: 92%;
+    }
+	
+	main nav div a {
+		font-size: 10px;
+	}
+    
+    .dsgn-1 .title {
+        margin: 40px -5px 10px;
+    }
+    
+    .dsgn-1 .title h3 {
+        font-size: 18px;
+    }
+    
+    .dsgn-1 .arr {
+        padding: 30px 18px;
+        top: 50px;
+    }
+    
+    .dsgn-1 .song {
+        width: 120px;
+        margin: 10px 15px;
+    }
+    
+    .dsgn-1 .img i {
+        font-size: 60px;
+        bottom: 25px;
+        left: 35px;
+    }
+    
+    .dsgn-1 .about {
+        padding: 1px;
+    }
+    
+    .dsgn-1 .about a {
+        font-size: 15px;
+    }
+    
+    .dsgn-1 .about span {
+        font-size: 12px;
+    }
+    
+    .dsgn-1 .dots ul {
+        bottom: 15px;
+        right: 5px;
+    }
+    
+    .dsgn-1 .dots li {
+        height: 4px;
+        width: 4px;
+    }
+	
+	.playlist {
+		top: 106px;
+		left: 15px;
+	}
+	
+	.playlist h3 {
+		font-size: 15px;
+		padding: 5px 20px;
+	}
+}
+
+@media (max-width: 616px)
+{
+    #sm-sidebar {
+        width: 10%;
+    }
+    
+    main {
+        width: 90%;
+    }
+    
+    main nav .col-sm-2 {
+        padding: 2px 10px;
+    }
+}
